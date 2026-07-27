@@ -1,0 +1,11 @@
+node_modules
+coverage
+admin/config.yml
+package-lock.json
+
+# Not part of this project — a Python virtual environment sometimes
+# created alongside it (e.g. `python -m venv .venv`). Prettier has no
+# business formatting third-party vendored Python/JS files.
+.venv
+venv
+__pycache__

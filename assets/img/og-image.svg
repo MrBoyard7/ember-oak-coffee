@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="ogTitle">
+  <title id="ogTitle">Ember &amp; Oak Coffee Co. — Slow roasted. Warmly poured.</title>
+  <rect width="1200" height="630" fill="#241C18"/>
+  <circle cx="1000" cy="150" r="220" fill="#34291F"/>
+  <path d="M600 165c-55 0-100 45-100 100s45 100 100 100 100-45 100-100-45-100-100-100Z" fill="#C1652F" transform="translate(-160 30)"/>
+  <path d="M440 195c20 25 20 50 0 80s-20 55 0 80" stroke="#241C18" stroke-width="18" fill="none" stroke-linecap="round" transform="translate(-160 30)"/>
+  <text x="90" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#F6EFE4" font-weight="700">Ember &amp; Oak</text>
+  <text x="90" y="400" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#F6EFE4" font-weight="700">Coffee Co.</text>
+  <text x="90" y="460" font-family="Verdana, sans-serif" font-size="30" fill="#C1652F">Slow roasted. Warmly poured.</text>
+</svg>

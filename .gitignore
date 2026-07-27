@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Test & coverage output
+coverage/
+
+# Decap CMS local media uploads (kept out of version control by default;
+# remove this line if you want uploaded images committed to the repo)
+assets/img/uploads/
+
+# Python virtual environment (if created alongside this project)
+.venv/
+venv/
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Env
+.env
+.env.local

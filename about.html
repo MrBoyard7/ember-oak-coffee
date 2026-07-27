@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Story — Ember &amp; Oak Coffee Co.</title>
+    <meta
+      name="description"
+      content="From a Saturday market stall to a roastery-café in Dakar: the story of Ember &amp; Oak Coffee Co."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Our Story — Ember &amp; Oak Coffee Co." />
+    <meta property="og:image" content="assets/img/og-image.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://emberandoak.example/about.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script>
+      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="assets/js/analytics.js"></script>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+    <div class="announcement" data-announcement hidden>
+      <span data-announcement-text></span>
+      <a href="#" data-announcement-link hidden></a>
+      <button type="button" data-announcement-close aria-label="Dismiss announcement">✕</button>
+    </div>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand-mark" href="index.html">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#C1652F" />
+            <path d="M32 12c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20Z" fill="#241C18" />
+            <path
+              d="M32 16c4 5 4 10 0 16s-4 11 0 16"
+              stroke="#C1652F"
+              stroke-width="4"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          Ember &amp; Oak
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation menu</span>
+        </button>
+        <nav class="main-nav" id="main-nav" data-main-nav aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html" aria-current="page">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section section-light">
+        <div class="container" style="max-width: var(--content-narrow)">
+          <h1 data-field="about.heading">A café built around the roast, not the logo</h1>
+          <p style="font-size: 1.1rem" data-field="about.intro">
+            Ember &amp; Oak started as a Saturday market stall with a 1kg sample roaster and a
+            folding table. Four years on, the roaster is bigger, the table is a counter, and the
+            Saturday-only part is the only thing that changed.
+          </p>
+          <div data-field-list="about.body"></div>
+          <blockquote class="pull-quote">
+            "We're not trying to be the biggest café in town. We're trying to be the one where the
+            person behind the counter remembers your order."
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div class="container" style="max-width: var(--content-narrow)">
+          <div class="section-heading">
+            <h2>How we got here</h2>
+            <p>Four years, one drum roaster, and a growing list of farms we visit in person.</p>
+          </div>
+          <ul class="timeline" data-timeline></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-field="footer.note">Roasted, brewed, and built with care in Dakar.</p>
+        <p>
+          &copy; <span data-current-year></span> Ember &amp; Oak Coffee Co. Built by
+          <a href="https://github.com/MrBoyard7" target="_blank" rel="noopener">MrBoyard7</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/content-loader.js"></script>
+  </body>
+</html>

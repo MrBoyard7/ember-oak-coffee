@@ -1,0 +1,126 @@
+# Decap CMS configuration (formerly Netlify CMS).
+# This is the "comparable-to-WordPress/Webflow" CMS layer: a hosted admin
+# screen at /admin with a login, that edits the JSON files in /data and
+# uploads images to /assets/img — no code editing required.
+#
+# Setup required once, before first login (see README > "CMS setup"):
+#   1. Choose an auth provider for the `backend` section below
+#      (GitHub OAuth via Netlify, or any Git Gateway-compatible backend).
+#   2. Update `repo` to the real GitHub repository once created.
+#   3. Deploy the site (Netlify, Vercel, or your own host) so /admin is reachable.
+
+backend:
+  name: github
+  repo: MrBoyard7/ember-oak-coffee
+  branch: main
+
+# Enables local testing of the CMS without a live git backend:
+# run `npx decap-server` alongside `npm run dev` and Decap CMS will
+# read/write files on disk instead of calling the GitHub API.
+local_backend: true
+
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+public_folder: "assets/img/uploads"
+
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - name: "general"
+        label: "Homepage, Story & Contact"
+        file: "data/site-content.json"
+        fields:
+          - { label: "Café Name", name: "brand.name", widget: "string" }
+          - { label: "Tagline", name: "brand.tagline", widget: "string" }
+          - { label: "Short Description", name: "brand.shortDescription", widget: "text" }
+          - { label: "Hero Eyebrow", name: "hero.eyebrow", widget: "string" }
+          - { label: "Hero Heading", name: "hero.heading", widget: "text" }
+          - { label: "Hero Subheading", name: "hero.subheading", widget: "text" }
+          - label: "Highlights"
+            name: "highlights"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - label: "Body Paragraphs"
+                name: "body"
+                widget: "list"
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
+              - label: "Milestones"
+                name: "milestones"
+                widget: "list"
+                fields:
+                  - { label: "Year", name: "year", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Detail", name: "detail", widget: "text" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - label: "Address"
+                name: "address"
+                widget: "object"
+                fields:
+                  - { label: "Line 1", name: "line1", widget: "string" }
+                  - { label: "Line 2", name: "line2", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - label: "Opening Hours"
+                name: "hours"
+                widget: "list"
+                fields:
+                  - { label: "Days", name: "days", widget: "string" }
+                  - { label: "Time", name: "time", widget: "string" }
+              - label: "Social Links"
+                name: "social"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "URL", name: "href", widget: "string" }
+
+  - name: "menu"
+    label: "Menu"
+    files:
+      - name: "menu"
+        label: "Menu Items"
+        file: "data/menu.json"
+        fields:
+          - { label: "Last Updated", name: "updated", widget: "datetime", format: "YYYY-MM-DD" }
+          - { label: "Currency", name: "currency", widget: "string" }
+          - label: "Categories"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "Roast Note"
+                name: "roastNote"
+                widget: "select"
+                options: ["light", "medium", "dark"]
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Price", name: "price", widget: "string" }
+
+  - name: "announcements"
+    label: "Announcement Banner"
+    files:
+      - name: "announcement"
+        label: "Current Announcement"
+        file: "data/announcements.json"
+        fields:
+          - { label: "Show Banner", name: "active", widget: "boolean" }
+          - { label: "Message", name: "message", widget: "string" }
+          - { label: "Link Label", name: "linkLabel", widget: "string", required: false }
+          - { label: "Link URL", name: "linkHref", widget: "string", required: false }
+          - { label: "Expires", name: "expires", widget: "datetime", format: "YYYY-MM-DD", required: false }

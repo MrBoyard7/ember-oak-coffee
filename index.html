@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ember &amp; Oak Coffee Co. — Small-batch roastery &amp; café in Dakar</title>
+    <meta
+      name="description"
+      content="Ember &amp; Oak is a small-batch roastery and coffee bar in downtown Dakar, pouring direct-trade, single-origin coffee since 2021."
+    />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ember &amp; Oak Coffee Co." />
+    <meta
+      property="og:description"
+      content="Slow roasted. Warmly poured. A neighbourhood roastery and coffee bar in Dakar."
+    />
+    <meta property="og:image" content="assets/img/og-image.svg" />
+    <meta property="og:url" content="https://emberandoak.example/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://emberandoak.example/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Structured data: local business (basic on-page SEO) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CafeOrCoffeeShop",
+        "name": "Ember & Oak Coffee Co.",
+        "image": "https://emberandoak.example/assets/img/og-image.svg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "14 Rue des Torréfacteurs",
+          "addressLocality": "Dakar",
+          "addressCountry": "SN"
+        },
+        "servesCuisine": "Coffee",
+        "priceRange": "$$",
+        "telephone": "+221330000000"
+      }
+    </script>
+
+    <!--
+    Google Analytics (GA4) — replace G-XXXXXXXXXX with the property's
+    real Measurement ID before deploying. See README > "Google Analytics".
+  -->
+    <script>
+      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="assets/js/analytics.js"></script>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+    <div class="announcement" data-announcement hidden>
+      <span data-announcement-text></span>
+      <a href="#" data-announcement-link hidden></a>
+      <button type="button" data-announcement-close aria-label="Dismiss announcement">✕</button>
+    </div>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand-mark" href="index.html">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#C1652F" />
+            <path d="M32 12c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20Z" fill="#241C18" />
+            <path
+              d="M32 16c4 5 4 10 0 16s-4 11 0 16"
+              stroke="#C1652F"
+              stroke-width="4"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          Ember &amp; Oak
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation menu</span>
+        </button>
+        <nav class="main-nav" id="main-nav" data-main-nav aria-label="Primary">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="container">
+          <div>
+            <span class="hero-eyebrow" data-field="hero.eyebrow"
+              >Now roasting: Ethiopia Guji, Medium roast</span
+            >
+            <h1 data-field="hero.heading">Slow roasted. Warmly poured.</h1>
+            <p data-field="hero.subheading">
+              We roast in small batches, twice a week, and pour every cup like it's the only one
+              we're making today.
+            </p>
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="menu.html">See the menu</a>
+              <a class="btn btn-secondary" href="about.html">Our story</a>
+            </div>
+          </div>
+
+          <div class="hero-dial" aria-hidden="true">
+            <svg viewBox="0 0 200 140" width="260" height="182">
+              <circle cx="100" cy="100" r="94" fill="#1c1611" />
+              <path
+                d="M 20 100 A 80 80 0 0 1 60 30.7"
+                fill="none"
+                stroke="#D9B98A"
+                stroke-width="18"
+              />
+              <path
+                d="M 60 30.7 A 80 80 0 0 1 140 30.7"
+                fill="none"
+                stroke="#C1652F"
+                stroke-width="18"
+              />
+              <path
+                d="M 140 30.7 A 80 80 0 0 1 180 100"
+                fill="none"
+                stroke="#6B3A1E"
+                stroke-width="18"
+              />
+              <text
+                x="18"
+                y="120"
+                font-family="IBM Plex Mono, monospace"
+                font-size="9"
+                fill="#F6EFE4"
+              >
+                LIGHT
+              </text>
+              <text
+                x="82"
+                y="20"
+                font-family="IBM Plex Mono, monospace"
+                font-size="9"
+                fill="#F6EFE4"
+              >
+                MEDIUM
+              </text>
+              <text
+                x="152"
+                y="120"
+                font-family="IBM Plex Mono, monospace"
+                font-size="9"
+                fill="#F6EFE4"
+              >
+                DARK
+              </text>
+              <line
+                class="roast-dial-needle"
+                x1="100"
+                y1="100"
+                x2="100"
+                y2="26"
+                stroke="#F6EFE4"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <circle cx="100" cy="100" r="7" fill="#F6EFE4" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Why people come back</h2>
+            <p>Three things we care about more than square footage or seat count.</p>
+          </div>
+          <div class="card-grid" data-highlights></div>
+        </div>
+      </section>
+
+      <section class="section section-dark">
+        <div
+          class="container"
+          style="
+            display: grid;
+            gap: var(--space-4);
+            grid-template-columns: 1fr;
+            max-width: var(--content-narrow);
+          "
+        >
+          <div class="reveal">
+            <span class="hero-eyebrow">Coming soon</span>
+            <h2 style="font-size: var(--step-2)">Beans online, and a calendar of cuppings</h2>
+            <p style="color: rgba(246, 239, 228, 0.78)">
+              We're building out online bean sales and an events page for public cuppings and brew
+              classes. Leave your email at the counter or on the
+              <a href="contact.html" style="color: var(--color-copper); text-decoration: underline"
+                >contact page</a
+              >
+              to hear first.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-field="footer.note">Roasted, brewed, and built with care in Dakar.</p>
+        <p>
+          &copy; <span data-current-year></span> Ember &amp; Oak Coffee Co. Built by
+          <a href="https://github.com/MrBoyard7" target="_blank" rel="noopener">MrBoyard7</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/content-loader.js"></script>
+  </body>
+</html>

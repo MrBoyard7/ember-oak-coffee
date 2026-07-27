@@ -1,0 +1,16 @@
+{
+  "name": "Ember & Oak Coffee Co.",
+  "short_name": "Ember & Oak",
+  "description": "Small-batch roastery and coffee bar in Dakar.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#241C18",
+  "theme_color": "#241C18",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

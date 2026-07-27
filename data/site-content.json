@@ -1,0 +1,110 @@
+{
+  "brand": {
+    "name": "Ember & Oak Coffee Co.",
+    "tagline": "Slow roasted. Warmly poured.",
+    "shortDescription": "A neighbourhood roastery and coffee bar in downtown Dakar, pouring single-origin coffee since 2021."
+  },
+  "hero": {
+    "eyebrow": "Now roasting: Ethiopia Guji, Medium roast",
+    "heading": "Slow roasted.\nWarmly poured.",
+    "subheading": "We roast in small batches, twice a week, and pour every cup like it's the only one we're making today.",
+    "primaryCta": {
+      "label": "See the menu",
+      "href": "menu.html"
+    },
+    "secondaryCta": {
+      "label": "Our story",
+      "href": "about.html"
+    }
+  },
+  "highlights": [
+    {
+      "title": "Small-batch roasting",
+      "description": "Beans roasted on-site in 12kg batches, never more, so every bag is within two weeks of the drum."
+    },
+    {
+      "title": "Direct-trade sourcing",
+      "description": "We buy from four family farms we visit every year, and we publish the price we pay them."
+    },
+    {
+      "title": "A place to stay a while",
+      "description": "Big tables, reliable Wi-Fi, and no clock-watching. Bring your laptop or your book club."
+    }
+  ],
+  "about": {
+    "heading": "A café built around the roast, not the logo",
+    "intro": "Ember & Oak started as a Saturday market stall with a 1kg sample roaster and a folding table. Four years on, the roaster is bigger, the table is a counter, and the Saturday-only part is the only thing that changed.",
+    "body": [
+      "We're a two-person roastery that grew into a café because people kept asking where they could sit down and drink the coffee, not just buy the bag.",
+      "Every roast is logged: origin, altitude, process, and the curve we ran to get there. Ask any barista and they can tell you why the Guji tastes different this week than it did last month.",
+      "We're not trying to be the biggest café in town. We're trying to be the one where the person behind the counter remembers your order."
+    ],
+    "milestones": [
+      {
+        "year": "2021",
+        "label": "First roast",
+        "detail": "1kg sample roaster, a Saturday market stall, and a lot of trial batches."
+      },
+      {
+        "year": "2022",
+        "label": "First storefront",
+        "detail": "A 40m² corner space with a 5kg drum roaster and six seats."
+      },
+      {
+        "year": "2023",
+        "label": "Direct trade",
+        "detail": "First farm visit to Guji, Ethiopia. Began paying and publishing above-market prices."
+      },
+      {
+        "year": "2024",
+        "label": "Today's space",
+        "detail": "Moved into our current roastery-café, seating 28, with the roaster visible from every table."
+      }
+    ]
+  },
+  "contact": {
+    "address": {
+      "line1": "14 Rue des Torréfacteurs",
+      "line2": "Plateau, Dakar, Sénégal"
+    },
+    "phone": "+221 33 000 00 00",
+    "email": "hello@emberandoak.example",
+    "hours": [
+      {
+        "days": "Monday – Friday",
+        "time": "7:00 – 18:00"
+      },
+      {
+        "days": "Saturday",
+        "time": "8:00 – 18:00"
+      },
+      {
+        "days": "Sunday",
+        "time": "9:00 – 15:00"
+      }
+    ],
+    "social": [
+      {
+        "label": "Instagram",
+        "href": "https://instagram.com/example"
+      },
+      {
+        "label": "Facebook",
+        "href": "https://facebook.com/example"
+      }
+    ]
+  },
+  "footer": {
+    "note": "Roasted, brewed, and built with care in Dakar.",
+    "futurePages": [
+      {
+        "label": "Shop beans online",
+        "status": "coming soon"
+      },
+      {
+        "label": "Events & cuppings",
+        "status": "coming soon"
+      }
+    ]
+  }
+}

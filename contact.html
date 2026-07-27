@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact &amp; Hours — Ember &amp; Oak Coffee Co.</title>
+    <meta
+      name="description"
+      content="Visit Ember &amp; Oak Coffee Co. in Plateau, Dakar. Opening hours, address, and how to reach us."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact &amp; Hours — Ember &amp; Oak Coffee Co." />
+    <meta property="og:image" content="assets/img/og-image.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="canonical" href="https://emberandoak.example/contact.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <script>
+      window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="assets/js/analytics.js"></script>
+  </head>
+  <body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+
+    <div class="announcement" data-announcement hidden>
+      <span data-announcement-text></span>
+      <a href="#" data-announcement-link hidden></a>
+      <button type="button" data-announcement-close aria-label="Dismiss announcement">✕</button>
+    </div>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand-mark" href="index.html">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#C1652F" />
+            <path d="M32 12c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20Z" fill="#241C18" />
+            <path
+              d="M32 16c4 5 4 10 0 16s-4 11 0 16"
+              stroke="#C1652F"
+              stroke-width="4"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          Ember &amp; Oak
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation menu</span>
+        </button>
+        <nav class="main-nav" id="main-nav" data-main-nav aria-label="Primary">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section section-light">
+        <div class="container">
+          <div class="section-heading">
+            <h1>Visit us</h1>
+            <p>
+              We're a five-minute walk from Place de l'Indépendance. Big tables, reliable Wi-Fi, and
+              no clock-watching.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div>
+              <h2 style="font-size: 1.3rem">Address</h2>
+              <p data-field="contact.address.line1">14 Rue des Torréfacteurs</p>
+              <p data-field="contact.address.line2" style="margin-top: -0.75rem">
+                Plateau, Dakar, Sénégal
+              </p>
+
+              <h2 style="font-size: 1.3rem; margin-top: var(--space-3)">Reach us</h2>
+              <p>
+                <a data-field="contact.phone" data-tel-link href="tel:+221330000000"
+                  >+221&nbsp;33&nbsp;000&nbsp;00&nbsp;00</a
+                ><br />
+                <a data-field="contact.email" data-mail-link href="mailto:hello@emberandoak.example"
+                  >hello@emberandoak.example</a
+                >
+              </p>
+
+              <h2 style="font-size: 1.3rem; margin-top: var(--space-3)">Hours</h2>
+              <table class="hours-table">
+                <tbody data-hours></tbody>
+              </table>
+            </div>
+
+            <div>
+              <div class="map-illustration">
+                <svg
+                  viewBox="0 0 400 300"
+                  width="100%"
+                  role="img"
+                  aria-label="Illustrated map of the café location"
+                >
+                  <rect width="400" height="300" fill="#efe6d8" />
+                  <rect
+                    x="0"
+                    y="0"
+                    width="400"
+                    height="300"
+                    fill="none"
+                    stroke="#2a211b1f"
+                    stroke-width="1"
+                  />
+                  <g stroke="#2a211b26" stroke-width="6" fill="none">
+                    <path d="M0 90 H400" />
+                    <path d="M0 210 H400" />
+                    <path d="M130 0 V300" />
+                    <path d="M280 0 V300" />
+                  </g>
+                  <circle cx="205" cy="150" r="14" fill="#C1652F" />
+                  <path d="M205 150 m0,-30 a1,1 0 1,1 -0.1,0" fill="none" />
+                  <path
+                    d="M205 120 c0 16 -18 20 -18 34 a18 18 0 0 0 36 0 c0 -14 -18 -18 -18 -34 z"
+                    fill="#241C18"
+                  />
+                  <text
+                    x="150"
+                    y="270"
+                    font-family="IBM Plex Mono, monospace"
+                    font-size="12"
+                    fill="#5a4d43"
+                  >
+                    Plateau, Dakar
+                  </text>
+                </svg>
+              </div>
+
+              <h2 style="font-size: 1.3rem; margin-top: var(--space-4)">Send a message</h2>
+              <p style="font-size: 0.9rem; color: var(--color-ink-soft)">
+                This form opens your email client with the message pre-filled — no backend required.
+                Swap it for a hosted form service (e.g. Formspree) once you're ready to collect
+                submissions server-side.
+              </p>
+              <form
+                class="contact-form"
+                action="mailto:hello@emberandoak.example"
+                method="post"
+                enctype="text/plain"
+              >
+                <div>
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" required autocomplete="name" />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" required autocomplete="email" />
+                </div>
+                <div>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-field="footer.note">Roasted, brewed, and built with care in Dakar.</p>
+        <p>
+          &copy; <span data-current-year></span> Ember &amp; Oak Coffee Co. Built by
+          <a href="https://github.com/MrBoyard7" target="_blank" rel="noopener">MrBoyard7</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/content-loader.js"></script>
+  </body>
+</html>

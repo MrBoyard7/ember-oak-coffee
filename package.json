@@ -1,0 +1,41 @@
+{
+  "name": "ember-oak-coffee",
+  "version": "1.0.0",
+  "description": "Responsive marketing website and lightweight CMS setup for Ember & Oak Coffee Co., a small-batch coffee roastery and café.",
+  "license": "MIT",
+  "author": "Prince Boyard MBOUNGOU NGOMA <https://github.com/MrBoyard7>",
+  "private": true,
+  "type": "module",
+  "homepage": "https://github.com/MrBoyard7/ember-oak-coffee#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrBoyard7/ember-oak-coffee.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MrBoyard7/ember-oak-coffee/issues"
+  },
+  "scripts": {
+    "dev": "npx serve . -l 3000",
+    "test": "node --test",
+    "test:coverage": "c8 --all --include=\"assets/js/**\" --reporter=lcov --reporter=text node --test",
+    "lint:js": "eslint .",
+    "lint:css": "stylelint \"assets/css/**/*.css\"",
+    "lint:html": "html-validate \"*.html\"",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "c8": "^10.1.2",
+    "eslint": "^8.57.0",
+    "html-validate": "^8.18.1",
+    "jsdom": "^24.1.0",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard": "^36.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

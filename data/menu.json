@@ -1,0 +1,85 @@
+{
+  "updated": "2026-07-01",
+  "currency": "XOF",
+  "categories": [
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "roastNote": "medium",
+      "items": [
+        { "name": "Espresso", "description": "Our house blend, pulled short.", "price": "1200" },
+        {
+          "name": "Americano",
+          "description": "Espresso, hot water, no shortcuts.",
+          "price": "1500"
+        },
+        {
+          "name": "Flat White",
+          "description": "Double ristretto, steamed whole milk.",
+          "price": "2000"
+        },
+        {
+          "name": "Pour Over",
+          "description": "Single-origin, brewed to order. Ask what's on the shelf.",
+          "price": "2200"
+        }
+      ]
+    },
+    {
+      "id": "tea-alt",
+      "name": "Tea & Alternatives",
+      "roastNote": "light",
+      "items": [
+        {
+          "name": "Ceylon Black Tea",
+          "description": "Loose leaf, steeped four minutes.",
+          "price": "1300"
+        },
+        {
+          "name": "Hibiscus Cooler",
+          "description": "Cold-brewed hibiscus, mint, lime.",
+          "price": "1500"
+        },
+        {
+          "name": "Matcha Latte",
+          "description": "Ceremonial-grade matcha, oat milk available.",
+          "price": "2100"
+        }
+      ]
+    },
+    {
+      "id": "pastries",
+      "name": "Pastries & Bites",
+      "roastNote": "dark",
+      "items": [
+        {
+          "name": "Butter Croissant",
+          "description": "Baked fresh each morning, gone by noon.",
+          "price": "1000"
+        },
+        {
+          "name": "Banana Oat Loaf",
+          "description": "Dense, barely sweet, whole-grain oats.",
+          "price": "1200"
+        },
+        {
+          "name": "Savoury Tart",
+          "description": "Rotating filling, ask what's today's.",
+          "price": "1800"
+        }
+      ]
+    },
+    {
+      "id": "seasonal",
+      "name": "Seasonal Specials",
+      "roastNote": "medium",
+      "items": [
+        {
+          "name": "Spiced Cold Brew",
+          "description": "Cardamom and orange peel, 18-hour steep.",
+          "price": "1900"
+        }
+      ]
+    }
+  ]
+}

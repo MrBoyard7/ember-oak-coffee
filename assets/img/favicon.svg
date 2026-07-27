@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Ember & Oak Coffee Co. coffee bean mark</title>
+  <rect width="64" height="64" rx="14" fill="#241C18"/>
+  <path d="M32 12c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20Z" fill="#C1652F"/>
+  <path d="M32 16c4 5 4 10 0 16s-4 11 0 16" stroke="#241C18" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
